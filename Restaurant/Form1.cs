@@ -50,6 +50,5 @@ namespace Restaurant
             main.Show();
             this.Hide();
         }
-
     }
 }
