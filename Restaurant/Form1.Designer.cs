@@ -31,14 +31,12 @@ namespace Restaurant
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-<<<<<<< HEAD
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.fileSystemWatcher2 = new System.IO.FileSystemWatcher();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).BeginInit();
-=======
+
             this.button4 = new System.Windows.Forms.Button();
->>>>>>> aa2f29cd4b396b92be31c6277472b448823e257f
             this.SuspendLayout();
             // 
             // button1
@@ -120,12 +118,11 @@ namespace Restaurant
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-<<<<<<< HEAD
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.IO.FileSystemWatcher fileSystemWatcher2;
-=======
+
         private System.Windows.Forms.Button button4;
->>>>>>> aa2f29cd4b396b92be31c6277472b448823e257f
+
     }
 }
 
