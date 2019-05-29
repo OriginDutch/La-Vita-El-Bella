@@ -33,10 +33,9 @@ namespace Restaurant
             this.button3 = new System.Windows.Forms.Button();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.fileSystemWatcher2 = new System.IO.FileSystemWatcher();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).BeginInit();
-
-            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -70,8 +69,8 @@ namespace Restaurant
             this.button3.TabIndex = 2;
             this.button3.Text = "Order History";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-
             // fileSystemWatcher1
             // 
             this.fileSystemWatcher1.EnableRaisingEvents = true;
@@ -81,7 +80,7 @@ namespace Restaurant
             // 
             this.fileSystemWatcher2.EnableRaisingEvents = true;
             this.fileSystemWatcher2.SynchronizingObject = this;
-
+            // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(12, 99);
@@ -122,7 +121,6 @@ namespace Restaurant
         private System.IO.FileSystemWatcher fileSystemWatcher2;
 
         private System.Windows.Forms.Button button4;
-
     }
 }
 
