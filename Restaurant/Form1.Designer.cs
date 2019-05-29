@@ -73,7 +73,7 @@ namespace Restaurant
             this.button3.Text = "Order History";
             this.button3.UseVisualStyleBackColor = true;
             // 
-<<<<<<< HEAD
+
             // fileSystemWatcher1
             // 
             this.fileSystemWatcher1.EnableRaisingEvents = true;
@@ -83,7 +83,7 @@ namespace Restaurant
             // 
             this.fileSystemWatcher2.EnableRaisingEvents = true;
             this.fileSystemWatcher2.SynchronizingObject = this;
-=======
+
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(12, 99);
@@ -93,7 +93,6 @@ namespace Restaurant
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.Button4_Click);
->>>>>>> aa2f29cd4b396b92be31c6277472b448823e257f
             // 
             // Form1
             // 
