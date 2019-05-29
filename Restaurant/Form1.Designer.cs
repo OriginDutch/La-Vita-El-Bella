@@ -31,10 +31,14 @@ namespace Restaurant
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.fileSystemWatcher2 = new System.IO.FileSystemWatcher();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).BeginInit();
+=======
+            this.button4 = new System.Windows.Forms.Button();
+>>>>>>> aa2f29cd4b396b92be31c6277472b448823e257f
             this.SuspendLayout();
             // 
             // button1
@@ -69,6 +73,7 @@ namespace Restaurant
             this.button3.Text = "Order History";
             this.button3.UseVisualStyleBackColor = true;
             // 
+<<<<<<< HEAD
             // fileSystemWatcher1
             // 
             this.fileSystemWatcher1.EnableRaisingEvents = true;
@@ -78,12 +83,24 @@ namespace Restaurant
             // 
             this.fileSystemWatcher2.EnableRaisingEvents = true;
             this.fileSystemWatcher2.SynchronizingObject = this;
+=======
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(12, 99);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(186, 101);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
+>>>>>>> aa2f29cd4b396b92be31c6277472b448823e257f
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -104,8 +121,12 @@ namespace Restaurant
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+<<<<<<< HEAD
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.IO.FileSystemWatcher fileSystemWatcher2;
+=======
+        private System.Windows.Forms.Button button4;
+>>>>>>> aa2f29cd4b396b92be31c6277472b448823e257f
     }
 }
 
