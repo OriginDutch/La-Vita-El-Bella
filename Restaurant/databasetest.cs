@@ -14,10 +14,17 @@ namespace Restaurant
 {
     public partial class databasetest : Form
     {
+        string connectionString = "datasource=remotemysql.com;port=3306;username=KOkL7wllES;password=ZkNaR0D22e;database=KOkL7wllES;";
+
         public databasetest()
         {
             InitializeComponent();
         }
+        private void databasetest_Load(object sender, EventArgs e)
+        {
+            MySQLFunctions.Refresh(dataGrid);
+        }
+
 
         private void Button1_Click(object sender, EventArgs e)
         {
@@ -28,25 +35,27 @@ namespace Restaurant
 
         private void Button2_Click(object sender, EventArgs e)
         {
-           /* string connectionString = "datasource=remotemysql.com;port=3306;username=KOkL7wllES;password=ZkNaR0D22e;database=KOkL7wllES;";
-            MySqlConnection databaseConnection = new MySqlConnection(connectionString);
-
-            databaseConnection.Open();
+            MySqlConnection conn = new MySqlConnection(connectionString);
+            conn.Open();
             MessageBox.Show("Connection Created");
-            MySqlCommand cmd = new MySqlCommand(connectionString);
-            cmd.CommandText = "Select * from [Tabel1]";
+          
+        }
 
-            MySqlDataReader rd = cmd.ExecuteReader();
-            while (rd.Read())
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (DrinkName.Text != "" && DrinkPrice.Text != "")
             {
-                MessageBox.Show(rd["Test"].ToString());
-            }*/
+                MySQLFunctions.InsertDrink(DrinkName.Text, int.Parse(DrinkPrice.Text), dataGrid);
+                MySQLFunctions.Refresh(dataGrid);
+            }
+        }
 
-            string connectionString = "datasource=remotemysql.com;port=3306;username=KOkL7wllES;password=ZkNaR0D22e;database=KOkL7wllES;";
-            MySqlConnection databaseConnection = new MySqlConnection(connectionString);
-            databaseConnection.Open();
-            MessageBox.Show("Connection Created");
-           // MySqlDataReader pullingdata = pulldata.ExecuteReader();
+        private void delete_Click(object sender, EventArgs e)
+        {
+            MySQLFunctions.DeleteRow(dataGrid);
+            MySQLFunctions.Refresh(dataGrid);
         }
     }
+
 }
+
