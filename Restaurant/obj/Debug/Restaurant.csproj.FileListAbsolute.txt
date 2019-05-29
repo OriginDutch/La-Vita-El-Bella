@@ -10,3 +10,15 @@ C:\Users\HP\source\repos\Restaurant\Restaurant\obj\Debug\Restaurant.csproj.CoreC
 C:\Users\HP\source\repos\Restaurant\Restaurant\obj\Debug\Restaurant.exe
 C:\Users\HP\source\repos\Restaurant\Restaurant\obj\Debug\Restaurant.pdb
 C:\Users\HP\source\repos\Restaurant\Restaurant\obj\Debug\Restaurant.order.resources
+C:\Users\jonathan\Documents\GitHub\La-Vita-El-Bella\Restaurant\bin\Debug\Restaurant.exe.config
+C:\Users\jonathan\Documents\GitHub\La-Vita-El-Bella\Restaurant\bin\Debug\Restaurant.exe
+C:\Users\jonathan\Documents\GitHub\La-Vita-El-Bella\Restaurant\bin\Debug\Restaurant.pdb
+C:\Users\jonathan\Documents\GitHub\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.csprojAssemblyReference.cache
+C:\Users\jonathan\Documents\GitHub\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.Form1.resources
+C:\Users\jonathan\Documents\GitHub\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.order.resources
+C:\Users\jonathan\Documents\GitHub\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.Waiter.resources
+C:\Users\jonathan\Documents\GitHub\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.Properties.Resources.resources
+C:\Users\jonathan\Documents\GitHub\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.csproj.GenerateResource.cache
+C:\Users\jonathan\Documents\GitHub\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.csproj.CoreCompileInputs.cache
+C:\Users\jonathan\Documents\GitHub\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.exe
+C:\Users\jonathan\Documents\GitHub\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.pdb
