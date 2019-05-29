@@ -43,5 +43,12 @@ namespace Restaurant
         {
             Application.Exit();
         }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            databasetest main = new databasetest();
+            main.Show();
+            this.Hide();
+        }
     }
 }
