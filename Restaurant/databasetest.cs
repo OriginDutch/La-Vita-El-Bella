@@ -42,7 +42,7 @@ namespace Restaurant
                 MessageBox.Show(rd["Test"].ToString());
             }*/
 
-            string connectionString = "datasource=remotemysql.com;port=3306;username=KOkL7wllES;password=ZkNaR0D22e;database=KOkL7wllES;";
+            string connectionString = "server=remotemysql.com;port=3306;uid=KOkL7wllES;password=ZkNaR0D22e;database=KOkL7wllES;";
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
             databaseConnection.Open();
             MessageBox.Show("Connection Created");
