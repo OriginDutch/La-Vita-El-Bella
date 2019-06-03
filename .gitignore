@@ -355,3 +355,6 @@ MigrationBackup/
 *.cache
 >>>>>>> d913bbc482c7e735fdc0d0f2c9b30201a5f34d0e
 *.lock
+*.lock
+*.ide-shm
+*.ide-wal
