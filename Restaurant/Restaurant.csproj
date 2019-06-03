@@ -73,12 +73,6 @@
     <Compile Include="order.Designer.cs">
       <DependentUpon>order.cs</DependentUpon>
     </Compile>
-    <Compile Include="OrderH.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="OrderH.Designer.cs">
-      <DependentUpon>OrderH.cs</DependentUpon>
-    </Compile>
     <Compile Include="Waiter.cs">
       <SubType>Form</SubType>
     </Compile>
