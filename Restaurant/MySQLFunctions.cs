@@ -49,20 +49,6 @@ namespace Restaurant
                 conn.Close();
             }
         }
-        static public void DeleteRow(DataGridView dataGridView)
-        {
-            try
-            {
-                if (conn.State == ConnectionState.Closed)
-                    conn.Open();
-                MySqlCommand commandDelete = new MySqlCommand("DELETE from Drinks WHERE (ID='" + dataGridView.SelectedRows[0].Cells[0].Value.ToString() + "')", conn);
-
-            }
-            finally
-            {
-                conn.Close();
-            }
-        }
     }
 }
 

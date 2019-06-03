@@ -49,12 +49,6 @@ namespace Restaurant
                 MySQLFunctions.Refresh(dataGrid);
             }
         }
-
-        private void delete_Click(object sender, EventArgs e)
-        {
-            MySQLFunctions.DeleteRow(dataGrid);
-            MySQLFunctions.Refresh(dataGrid);
-        }
     }
 
 }
