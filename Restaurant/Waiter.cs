@@ -27,83 +27,12 @@ namespace Restaurant
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            order main = new order();
-            main.Show();
-            this.Hide();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            order main = new order();
-            main.Show();
-            this.Hide();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            order main = new order();
-            main.Show();
-            this.Hide();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            order main = new order();
-            main.Show();
-            this.Hide();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            order main = new order();
-            main.Show();
-            this.Hide();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            order main = new order();
-            main.Show();
-            this.Hide();
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            order main = new order();
-            main.Show();
-            this.Hide();
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            order main = new order();
-            main.Show();
-            this.Hide();
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            order main = new order();
-            main.Show();
-            this.Hide();
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            order main = new order();
-            main.Show();
-            this.Hide();
-        }
-
         private void Terug_Click(object sender, EventArgs e)
         {
             Form1 main = new Form1();
             main.Show();
             this.Hide();
         }
-     
 
     }
 }
