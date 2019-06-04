@@ -55,7 +55,13 @@ namespace Restaurant
 
         private void button3_Click(object sender, EventArgs e)
         {
+            var myControl = new Tafels();
+            panel1.Controls.Add(myControl);
+        }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+        
         }
     }
 }

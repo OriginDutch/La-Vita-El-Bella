@@ -7,6 +7,7 @@ using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 using System.Data;
 
+// Functies for databasetest.cs
 namespace Restaurant
 {
     static class MySQLFunctions
@@ -14,7 +15,7 @@ namespace Restaurant
 
         static private MySqlConnection conn = new MySqlConnection("datasource=remotemysql.com;port=3306;username=KOkL7wllES;password=ZkNaR0D22e;database=KOkL7wllES;");
 
-
+        // Refresht de datagrid
         static public void Refresh(DataGridView dataGridView)
         {
             try
@@ -32,6 +33,7 @@ namespace Restaurant
             }
 
         }
+        //Add nieuw drankje
         static public void InsertDrink(String DrinkName, float DrinkPrice, DataGridView dataGridView)
         {
             try

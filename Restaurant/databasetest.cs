@@ -25,22 +25,15 @@ namespace Restaurant
             MySQLFunctions.Refresh(dataGrid);
         }
 
-
+        //terug naar main
         private void Button1_Click(object sender, EventArgs e)
         {
             Form1 main = new Form1();
             main.Show();
             this.Hide();
         }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            MySqlConnection conn = new MySqlConnection(connectionString);
-            conn.Open();
-            MessageBox.Show("Connection Created");
-          
-        }
-
+        
+        //insert nieuw drankje
         private void button3_Click(object sender, EventArgs e)
         {
             if (DrinkName.Text != "" && DrinkPrice.Text != "")
