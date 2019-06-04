@@ -21,5 +21,12 @@ namespace Restaurant
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            order main = new order();
+            main.Show();
+            this.Hide();
+        }
     }
 }

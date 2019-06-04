@@ -63,5 +63,12 @@ namespace Restaurant
         {
         
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            var myControl = new test();
+            panel1.Controls.Add(myControl);
+        }
     }
 }

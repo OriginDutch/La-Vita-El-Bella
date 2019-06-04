@@ -32,3 +32,4 @@ C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\obj\Debug\Restau
 C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.exe
 C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.pdb
 C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.Tafels.resources
+C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.test.resources

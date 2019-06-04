@@ -29,7 +29,7 @@ namespace Restaurant
 
         private void Terug_Click(object sender, EventArgs e)
         {
-            Waiter main = new Waiter();
+            Form1 main = new Form1();
             main.Show();
             this.Hide();
         }
