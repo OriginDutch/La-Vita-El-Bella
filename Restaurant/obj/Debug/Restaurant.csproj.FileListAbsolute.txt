@@ -20,11 +20,8 @@ C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\bin\Debug\Google
 C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\bin\Debug\MySql.Data.xml
 C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.csprojAssemblyReference.cache
-C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.Chef.resources
 C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.databasetest.resources
 C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.Form1.resources
-C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.order.resources
-C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.Waiter.resources
 C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.Properties.Resources.resources
 C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.csproj.GenerateResource.cache
 C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.csproj.CoreCompileInputs.cache
@@ -32,4 +29,3 @@ C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\obj\Debug\Restau
 C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.exe
 C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.pdb
 C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.Tafels.resources
-C:\Users\HP\source\repos\Restaurant\La-Vita-El-Bella\Restaurant\obj\Debug\Restaurant.test.resources

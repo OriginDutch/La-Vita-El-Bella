@@ -49,12 +49,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MySQLFunctions.cs" />
-    <Compile Include="Chef.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Chef.Designer.cs">
-      <DependentUpon>Chef.cs</DependentUpon>
-    </Compile>
     <Compile Include="databasetest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,12 +60,6 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="order.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="order.Designer.cs">
-      <DependentUpon>order.cs</DependentUpon>
     </Compile>
     <Compile Include="OrderH.cs">
       <SubType>UserControl</SubType>
@@ -85,24 +73,8 @@
     <Compile Include="Tafels.Designer.cs">
       <DependentUpon>Tafels.cs</DependentUpon>
     </Compile>
-    <Compile Include="test.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="test.Designer.cs">
-      <DependentUpon>test.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Waiter.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Waiter.Designer.cs">
-      <DependentUpon>Waiter.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Chef.resx">
-      <DependentUpon>Chef.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="databasetest.resx">
       <DependentUpon>databasetest.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -111,19 +83,8 @@
       <DependentUpon>Form1.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="order.resx">
-      <DependentUpon>order.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Tafels.resx">
       <DependentUpon>Tafels.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="test.resx">
-      <DependentUpon>test.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Waiter.resx">
-      <DependentUpon>Waiter.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
