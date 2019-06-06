@@ -94,7 +94,7 @@ namespace Restaurant
             // 
             this.panel1.Location = new System.Drawing.Point(247, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1145, 662);
+            this.panel1.Size = new System.Drawing.Size(1680, 1000);
             this.panel1.TabIndex = 4;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -121,6 +121,7 @@ namespace Restaurant
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Restaurant";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
