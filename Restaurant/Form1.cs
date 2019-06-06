@@ -15,6 +15,8 @@ namespace Restaurant
 {
     public partial class Form1 : Form
     {
+
+        static public bool[] isBezet1 = new bool[6];
         public Form1()
         {
             InitializeComponent();
@@ -47,7 +49,8 @@ namespace Restaurant
         //Tafeltjes scherm
         private void Tafel_Click(object sender, EventArgs e)
         {
-            var myControl = new Tafels();
+            panel1.Controls.Clear();
+            var myControl = new Tafels(panel1);
             panel1.Controls.Add(myControl);
         }
 
