@@ -28,9 +28,9 @@ namespace Restaurant
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Chef main = new Chef();
-            main.Show();
-            this.Hide();
+            panel1.Controls.Clear();
+            var myControl = new chef();
+            panel1.Controls.Add(myControl);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -55,7 +55,21 @@ namespace Restaurant
 
         private void button3_Click(object sender, EventArgs e)
         {
+            panel1.Controls.Clear();
+            var myControl = new Tafels();
+            panel1.Controls.Add(myControl);
+        }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+        
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            var myControl = new test();
+            panel1.Controls.Add(myControl);
         }
     }
 }

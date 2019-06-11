@@ -48,13 +48,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="chef.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chef.Designer.cs">
+      <DependentUpon>chef.cs</DependentUpon>
+    </Compile>
     <Compile Include="MySQLFunctions.cs" />
-    <Compile Include="Chef.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Chef.Designer.cs">
-      <DependentUpon>Chef.cs</DependentUpon>
-    </Compile>
     <Compile Include="databasetest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +73,18 @@
     <Compile Include="order.Designer.cs">
       <DependentUpon>order.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tafels.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tafels.Designer.cs">
+      <DependentUpon>Tafels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
     <Compile Include="Waiter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,9 +93,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Chef.resx">
-      <DependentUpon>Chef.cs</DependentUpon>
-      <SubType>Designer</SubType>
+    <EmbeddedResource Include="chef.resx">
+      <DependentUpon>chef.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="databasetest.resx">
       <DependentUpon>databasetest.cs</DependentUpon>
@@ -97,6 +108,12 @@
       <DependentUpon>order.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tafels.resx">
+      <DependentUpon>Tafels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Waiter.resx">
       <DependentUpon>Waiter.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -109,6 +126,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -122,6 +140,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lange Tafel Groen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lange Tafel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

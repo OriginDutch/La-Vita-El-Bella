@@ -49,8 +49,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Terug);
             this.Name = "order";
-            this.Text = "order";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Text = "v ";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.order_FormClosed);
             this.Load += new System.EventHandler(this.order_Load);
             this.ResumeLayout(false);
