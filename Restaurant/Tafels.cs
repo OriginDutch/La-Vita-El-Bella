@@ -22,6 +22,10 @@ namespace Restaurant
         {
             InitializeComponent();
             this.panel = panelArgument;
+            var pos = this.PointToScreen(label1.Location);
+            pos = pictureBox2.PointToClient(pos);
+            label1.Parent = pictureBox2;
+            label1.Location = pos;
 
 
         }

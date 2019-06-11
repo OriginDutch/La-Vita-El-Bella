@@ -12,11 +12,14 @@ namespace Restaurant
 {
     public partial class Order : UserControl
     {
+
         public bool[] isBezet = { false, false, false, false, false, false};
         public Order()
         {
             InitializeComponent();
         }
+
+
 
         private void Order_Load(object sender, EventArgs e)
         {
