@@ -84,7 +84,7 @@ namespace Restaurant
             this.fileSystemWatcher2.SynchronizingObject = this;
             // 
             // button4
-            // 
+  
 
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button4.Location = new System.Drawing.Point(12, 99);
@@ -99,6 +99,7 @@ namespace Restaurant
             // panel1
             // 
 
+
             this.panel1.Location = new System.Drawing.Point(247, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1680, 1000);
@@ -108,6 +109,7 @@ namespace Restaurant
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(101, 509);
+
 
             this.panel1.BackColor = System.Drawing.Color.DarkRed;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -127,6 +129,7 @@ namespace Restaurant
             this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
 
+
             this.button5.Click += new System.EventHandler(this.button5_Click);
 
             // 
@@ -135,8 +138,11 @@ namespace Restaurant
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 
+
             this.ClientSize = new System.Drawing.Size(1243, 776);
 
+            this.ClientSize = new System.Drawing.Size(1243, 776);
+>
             this.Controls.Add(this.button5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button4);
@@ -146,8 +152,11 @@ namespace Restaurant
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
+
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Restaurant";
+
+            this.Text = " ";
 
             this.Text = " ";
 
