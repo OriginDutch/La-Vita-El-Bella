@@ -84,6 +84,7 @@
     </Compile>
     <Compile Include="test.Designer.cs">
       <DependentUpon>test.cs</DependentUpon>
+    </Compile>
     <Compile Include="orderH.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -118,6 +119,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="test.resx">
       <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="orderH.resx">
       <DependentUpon>orderH.cs</DependentUpon>
     </EmbeddedResource>
