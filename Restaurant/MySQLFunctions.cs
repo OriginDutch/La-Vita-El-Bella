@@ -26,7 +26,7 @@ namespace Restaurant
                 DataTable dataTable = new DataTable();
                 dataAdapter.Fill(dataTable);
                 dataGridView.DataSource = dataTable;
-            }
+            }s
             finally
             {
                 conn.Close();
