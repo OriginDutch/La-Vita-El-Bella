@@ -142,7 +142,7 @@ namespace Restaurant
             this.ClientSize = new System.Drawing.Size(1243, 776);
 
             this.ClientSize = new System.Drawing.Size(1243, 776);
->
+
             this.Controls.Add(this.button5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button4);
