@@ -42,7 +42,8 @@ namespace Restaurant
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 259);
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.Location = new System.Drawing.Point(511, 232);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(218, 100);
             this.button1.TabIndex = 0;
@@ -52,7 +53,8 @@ namespace Restaurant
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 143);
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button2.Location = new System.Drawing.Point(511, 99);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(218, 100);
             this.button2.TabIndex = 1;
@@ -62,7 +64,8 @@ namespace Restaurant
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(12, 381);
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button3.Location = new System.Drawing.Point(511, 366);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(218, 100);
             this.button3.TabIndex = 2;
@@ -82,9 +85,12 @@ namespace Restaurant
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(12, 12);
+
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.Location = new System.Drawing.Point(12, 99);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(218, 115);
+            this.button4.Size = new System.Drawing.Size(186, 176);
+
             this.button4.TabIndex = 3;
             this.button4.Text = "Connection";
             this.button4.UseVisualStyleBackColor = true;
@@ -92,6 +98,7 @@ namespace Restaurant
             // 
             // panel1
             // 
+
             this.panel1.Location = new System.Drawing.Point(247, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1680, 1000);
@@ -101,28 +108,49 @@ namespace Restaurant
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(101, 509);
+
+            this.panel1.BackColor = System.Drawing.Color.DarkRed;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1243, 39);
+            this.panel1.TabIndex = 4;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(1009, 163);
+
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 5;
             this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
+
             this.button5.Click += new System.EventHandler(this.button5_Click);
+
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1226, 561);
+
+            this.ClientSize = new System.Drawing.Size(1243, 776);
+
             this.Controls.Add(this.button5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Restaurant";
+
+            this.Text = " ";
+
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
