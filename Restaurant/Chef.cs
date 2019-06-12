@@ -115,6 +115,13 @@ namespace Restaurant
                 void button_Click(object sender, EventArgs e)
                 {
                     Button button = sender as Button;
+
+                   //string Update = "UPDATE Orders SET OrderStatus = '1' WHERE OrderId = 'OrderIdButton'";
+                    Debug.WriteLine("Test");
+                    MySqlCommand test = new MySqlCommand("UPDATE Orders SET OrderStatus = '1' WHERE OrderId = 'OrderIdButton'", databaseConnection);
+                    //MySqlConnection DatabaseConnection = new MySqlConnection(Update);
+                  // databaseConnection.Open();
+                   MessageBox.Show("yessir");
                     // identify which button was clicked and perform necessary actions
                     //MessageBox.Show(pullingdata["OrderID"].ToString() );
                     MessageBox.Show(OrderIdButton);
