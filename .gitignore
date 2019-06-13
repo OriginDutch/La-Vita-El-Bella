@@ -347,14 +347,8 @@ healthchecksdb
 
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
-<<<<<<< HEAD
-.vs/Restaurant/v15/Server/sqlite3/storage.ide-shm
-.vs/Restaurant/v15/.suo
-.vs/Restaurant/v15/Server/sqlite3/storage.ide-wal
-=======
-*.cache
->>>>>>> d913bbc482c7e735fdc0d0f2c9b30201a5f34d0e
-*.lock
+*.*.lock
 *.lock
 *.ide-shm
 *.ide-wal
+

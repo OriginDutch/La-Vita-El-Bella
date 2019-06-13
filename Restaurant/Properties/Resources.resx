@@ -124,10 +124,4 @@
   <data name="Lange Tafel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lange Tafel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="thumbnail (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\thumbnail (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="thumbnail (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\thumbnail (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>
