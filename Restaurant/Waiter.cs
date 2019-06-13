@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,23 +10,29 @@ using System.Windows.Forms;
 
 namespace Restaurant
 {
-    public partial class Tafels : UserControl
+    public partial class Waiter : Form
     {
-        public Tafels()
+        public Waiter()
         {
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void Waiter_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void Waiter_FormClosed(object sender, FormClosedEventArgs e)
         {
-            order main = new order();
+            Application.Exit();
+        }
+
+        private void Terug_Click(object sender, EventArgs e)
+        {
+            Form1 main = new Form1();
             main.Show();
             this.Hide();
         }
+
     }
 }
