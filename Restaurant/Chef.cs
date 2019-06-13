@@ -136,6 +136,7 @@ namespace Restaurant
                 // Event handler voor de button
                 void button_Click(object sender, EventArgs e)
                 {
+                    // Maak de button aan
                     Button button = sender as Button;
 
                     // Laat zien welke order klaar is
