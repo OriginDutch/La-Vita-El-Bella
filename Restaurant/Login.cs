@@ -19,9 +19,29 @@ namespace Restaurant
         static int alarmCounter = 1;
         static bool exitFlag = false;
 
+
+        private readonly Timer timer;
+
         public chef()
         {
+            // Deze functies laad die automatisch van de start in
             InitializeComponent();
+
+            timer = new Timer
+            {
+                Interval = 10000
+            };
+            timer.Tick += Update;
+
+            timer.Start();
+
+
+            loadFromDatabase();
+        }
+
+        private async void Update(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
             loadFromDatabase();
         }
        
@@ -29,7 +49,7 @@ namespace Restaurant
 
         private void FlowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-
+           
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -40,41 +60,44 @@ namespace Restaurant
 
             databaseConnection.Open();
             //test als de database het doet
-            MessageBox.Show("Connection Created");
-            
-            
-             
-            
+            MessageBox.Show("Connection Created"); 
         }
+        
         //Connect naar de database
         public void loadFromDatabase()
         {
-            Debug.WriteLine("Test");
+            // Maak De datbase connectie
             string connectionString = "datasource=remotemysql.com;port=3306;username=KOkL7wllES;password=ZkNaR0D22e;database=KOkL7wllES;";
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
+
+            //Open de database connectie
             databaseConnection.Open();
-            MySqlCommand pulldata = new MySqlCommand("SELECT * FROM Orders", databaseConnection);
+
+            // Laat alleen de orders zien waar de OrderStatus 0 is
+            MySqlCommand pulldata = new MySqlCommand("SELECT * FROM Orders WHERE OrderStatus = 0", databaseConnection);
             MySqlDataReader pullingdata = pulldata.ExecuteReader();
-            
+
             //Lees alle data in
             while (pullingdata.Read())
             {
-                Debug.WriteLine("Test");
-                Debug.WriteLine(pullingdata["OrderID"].ToString() );
+
+              
                 entryID.Add(Int32.Parse(pullingdata["OrderID"].ToString()));
-                string OrderIdButton = pullingdata["OrderID"].ToString();
                 
+                // Maar de OrderIdButton String en geef hem de OrderId
+                string OrderIdButton = pullingdata["OrderID"].ToString();
+
                 //maak de blokjes aan
                 var FlowBox = new FlowLayoutPanel
                 {
-                    Size = new Size(540, 333),
+                    Size = new Size(410, 333),
                 };
                 flowLayoutPanel1.Controls.Add(FlowBox);
 
                 //laat het taffelnummer zien
                 var TafelNummer = new Label
                 {
-                    Size = new Size(540, 40),
+                    Size = new Size(410, 40),
                     Text = "Tafel Nummer: " + pullingdata["TableNum"],
                     Font = new Font(FontFamily.GenericSansSerif, 20, FontStyle.Bold),
                 };
@@ -83,68 +106,58 @@ namespace Restaurant
                 //laat het gerecht zien
                 var NameText = new Label
                 {
-
-                    Size = new Size(540, 25),
+                    Size = new Size(410, 25),
                     Text = "", //+ pullingdata["DishName"],
-                    //ReadOnly = true
-              
+                               //ReadOnly = true
                 };
                 FlowBox.Controls.Add(NameText);
 
                 //laat de OrderId zien
                 var OrderId = new Label
                 {
-
-                    Size = new Size(540, 25),
+                    Size = new Size(410, 25),
                     Text = "Order ID = " + pullingdata["OrderID"],
-                    //ReadOnly = true
-
                 };
                 FlowBox.Controls.Add(OrderId);
 
                 //Maak de button aan
                 var Button = new Button
                 {
-                    Size = new Size(530, 25),
+                    Size = new Size(409, 25),
                     Text = "Order klaar.",
-                    
                 };
-
                 FlowBox.Controls.Add(Button);
+
+                
+
+                // Maak een eventhandler voor de button Click
                 Button.Click += new EventHandler(button_Click);
+
+                // Event handler voor de button
                 void button_Click(object sender, EventArgs e)
                 {
                     Button button = sender as Button;
-                    // identify which button was clicked and perform necessary actions
-                    //MessageBox.Show(pullingdata["OrderID"].ToString() );
-                    MessageBox.Show(OrderIdButton);
+
+                    // Laat zien welke order klaar is
+                    MessageBox.Show("Order " + OrderIdButton + " Is klaar.");
+
+                    // Update de orderstatus naar 1 waar de orderidbutton is
+                    MySqlCommand test = new MySqlCommand("UPDATE Orders SET OrderStatus = 1 WHERE OrderId = " + OrderIdButton, databaseConnection);
+
+                    // Open De database connectie
+                    databaseConnection.Open();
+
+                    // Laat de query in
+                    MySqlDataReader pulldata1 = test.ExecuteReader();
+
+                    // Sluit de database connectie
+                    databaseConnection.Close();
                 }
-
-
-
-
-                /*void button_click(object sender, EventArgs e)
-                {
-                    Button btn = sender as Button;
-                    MessageBox.Show (btn.Name+ "Created");
-                }*/
-                
-                /*var picture = new PictureBox
-                {
-                    Name = "" + pullingdata["SkinNaam"] + ".png",
-                    Size = new Size(300, 300),
-                    SizeMode = PictureBoxSizeMode.Zoom,
-                    Image = Image.FromFile(pullingdata["SkinImage"].ToString())
-                };
-                flowbox.Controls.Add(picture);*/
-
             }
             databaseConnection.Close();
-            entryID.ForEach(Console.WriteLine);
-
-        
+            
         }
-        
 
+     
     }
 }
