@@ -17,7 +17,7 @@ namespace Restaurant
     public partial class Form1 : Form
     {
 
-        static public bool[] isBezet1 = new bool[6];
+        static public bool[] isBezet1 = new bool[12];
         public Form1()
         {
             InitializeComponent();

@@ -17,6 +17,7 @@ namespace Restaurant
         public Order()
         {
             InitializeComponent();
+            
         }
 
 
@@ -28,7 +29,15 @@ namespace Restaurant
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Tafels.isBezet = true;
+            if (Tafels.isBezet == false)
+            {
+                Tafels.isBezet = true;
+            }
+            else
+            {
+                Tafels.isBezet = false;
+            }
+
         }
     }
 }
