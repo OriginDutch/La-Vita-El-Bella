@@ -19,19 +19,39 @@ namespace Restaurant
         static int alarmCounter = 1;
         static bool exitFlag = false;
 
+
+        private readonly Timer timer;
+
         public chef()
         {
             // Deze functies laad die automatisch van de start in
             InitializeComponent();
+
+            timer = new Timer
+            {
+                Interval = 10000
+            };
+            timer.Tick += Update;
+
+            timer.Start();
+                
+
             loadFromDatabase();
            // FlowLayoutPanelEmpty();
+        }
+
+        private async void Update(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            loadFromDatabase();
+            Console.WriteLine("time");
         }
        
 
 
         private void FlowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-
+            Console.WriteLine("hello");  
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -52,7 +72,7 @@ namespace Restaurant
         //Connect naar de database
         public void loadFromDatabase()
         {
-            Debug.WriteLine("Test");
+            
 
             // Maak De datbase connectie
             string connectionString = "datasource=remotemysql.com;port=3306;username=KOkL7wllES;password=ZkNaR0D22e;database=KOkL7wllES;";
@@ -69,8 +89,7 @@ namespace Restaurant
             while (pullingdata.Read())
             {
 
-                Debug.WriteLine("Test");
-                Debug.WriteLine(pullingdata["OrderID"].ToString());
+              
                 entryID.Add(Int32.Parse(pullingdata["OrderID"].ToString()));
                 
                 // Maar de OrderIdButton String en geef hem de OrderId
@@ -128,7 +147,7 @@ namespace Restaurant
                     Button button = sender as Button;
 
 
-                    Debug.WriteLine("Test");
+                   
 
                     // Laat zien welke order klaar is
                     MessageBox.Show("Order " + OrderIdButton + " Is klaar.");
@@ -155,7 +174,7 @@ namespace Restaurant
                 }
             }
             databaseConnection.Close();
-            entryID.ForEach(Console.WriteLine);
+            
         }
 
      
