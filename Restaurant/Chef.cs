@@ -34,24 +34,22 @@ namespace Restaurant
             timer.Tick += Update;
 
             timer.Start();
-                
+
 
             loadFromDatabase();
-           // FlowLayoutPanelEmpty();
         }
 
         private async void Update(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
             loadFromDatabase();
-            Console.WriteLine("time");
         }
        
 
 
         private void FlowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-            Console.WriteLine("hello");  
+           
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -62,18 +60,12 @@ namespace Restaurant
 
             databaseConnection.Open();
             //test als de database het doet
-            MessageBox.Show("Connection Created");
-            
-            
-             
-            
+            MessageBox.Show("Connection Created"); 
         }
         
         //Connect naar de database
         public void loadFromDatabase()
         {
-            
-
             // Maak De datbase connectie
             string connectionString = "datasource=remotemysql.com;port=3306;username=KOkL7wllES;password=ZkNaR0D22e;database=KOkL7wllES;";
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
@@ -145,9 +137,6 @@ namespace Restaurant
                 void button_Click(object sender, EventArgs e)
                 {
                     Button button = sender as Button;
-
-
-                   
 
                     // Laat zien welke order klaar is
                     MessageBox.Show("Order " + OrderIdButton + " Is klaar.");
