@@ -152,14 +152,6 @@ namespace Restaurant
 
                     // Sluit de database connectie
                     databaseConnection.Close();
-
-                    // Clear de flowlayout panel
-                    flowLayoutPanel1.Controls.Clear();
-
-                    // Laat het opnieuw in
-                    loadFromDatabase();
-
-                    
                 }
             }
             databaseConnection.Close();
