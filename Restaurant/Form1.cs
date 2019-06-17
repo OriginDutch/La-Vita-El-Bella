@@ -71,5 +71,21 @@ namespace Restaurant
             var myControl = new test();
             panel1.Controls.Add(myControl);
         }
+
+        private void orderHistory1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void OrderHistory_Click(object sender, EventArgs e)
+        {
+            // verstopt de andere user controls
+            chef.Hide();
+            Tafels.Hide();
+            test.Hide();
+            // opent order history user control
+            OrderHistory.Show();
+            OrderHistory.BringToFront();
+        }
     }
 }

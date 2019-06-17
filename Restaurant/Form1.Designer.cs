@@ -35,9 +35,11 @@ namespace Restaurant
             this.fileSystemWatcher2 = new System.IO.FileSystemWatcher();
             this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.orderHistory1 = new Restaurant.OrderHistory();
+            this.OrderHistory = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -92,28 +94,37 @@ namespace Restaurant
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.orderHistory1);
             this.panel1.Location = new System.Drawing.Point(247, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1680, 1000);
             this.panel1.TabIndex = 4;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button5
+            // orderHistory1
             // 
-            this.button5.Location = new System.Drawing.Point(101, 509);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.orderHistory1.Location = new System.Drawing.Point(0, 0);
+            this.orderHistory1.Name = "orderHistory1";
+            this.orderHistory1.Size = new System.Drawing.Size(978, 618);
+            this.orderHistory1.TabIndex = 0;
+            this.orderHistory1.Load += new System.EventHandler(this.orderHistory1_Load);
+            // 
+            // OrderHistory
+            // 
+            this.OrderHistory.Location = new System.Drawing.Point(12, 505);
+            this.OrderHistory.Name = "OrderHistory";
+            this.OrderHistory.Size = new System.Drawing.Size(218, 100);
+            this.OrderHistory.TabIndex = 1;
+            this.OrderHistory.Text = "Order History";
+            this.OrderHistory.UseVisualStyleBackColor = true;
+            this.OrderHistory.Click += new System.EventHandler(this.OrderHistory_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1226, 561);
-            this.Controls.Add(this.button5);
+            this.ClientSize = new System.Drawing.Size(1226, 630);
+            this.Controls.Add(this.OrderHistory);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -128,6 +139,7 @@ namespace Restaurant
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -142,7 +154,8 @@ namespace Restaurant
 
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button5;
+        private OrderHistory orderHistory1;
+        private System.Windows.Forms.Button OrderHistory;
     }
 }
 
