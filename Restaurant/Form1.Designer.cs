@@ -35,8 +35,8 @@ namespace Restaurant
             this.fileSystemWatcher2 = new System.IO.FileSystemWatcher();
             this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.orderHistory1 = new Restaurant.OrderHistory();
             this.OrderHistory = new System.Windows.Forms.Button();
+            this.orderHistory1 = new Restaurant.OrderHistory();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -44,7 +44,7 @@ namespace Restaurant
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 259);
+            this.button1.Location = new System.Drawing.Point(12, 291);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(218, 100);
             this.button1.TabIndex = 0;
@@ -54,7 +54,7 @@ namespace Restaurant
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 143);
+            this.button2.Location = new System.Drawing.Point(12, 175);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(218, 100);
             this.button2.TabIndex = 1;
@@ -64,7 +64,7 @@ namespace Restaurant
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(12, 381);
+            this.button3.Location = new System.Drawing.Point(12, 413);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(218, 100);
             this.button3.TabIndex = 2;
@@ -84,7 +84,7 @@ namespace Restaurant
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(12, 12);
+            this.button4.Location = new System.Drawing.Point(12, 44);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(218, 115);
             this.button4.TabIndex = 3;
@@ -101,17 +101,9 @@ namespace Restaurant
             this.panel1.TabIndex = 4;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // orderHistory1
-            // 
-            this.orderHistory1.Location = new System.Drawing.Point(0, 3);
-            this.orderHistory1.Name = "orderHistory1";
-            this.orderHistory1.Size = new System.Drawing.Size(967, 603);
-            this.orderHistory1.TabIndex = 0;
-            this.orderHistory1.Load += new System.EventHandler(this.orderHistory1_Load);
-            // 
             // OrderHistory
             // 
-            this.OrderHistory.Location = new System.Drawing.Point(12, 505);
+            this.OrderHistory.Location = new System.Drawing.Point(12, 537);
             this.OrderHistory.Name = "OrderHistory";
             this.OrderHistory.Size = new System.Drawing.Size(218, 100);
             this.OrderHistory.TabIndex = 1;
@@ -119,11 +111,19 @@ namespace Restaurant
             this.OrderHistory.UseVisualStyleBackColor = true;
             this.OrderHistory.Click += new System.EventHandler(this.OrderHistory_Click);
             // 
+            // orderHistory1
+            // 
+            this.orderHistory1.Location = new System.Drawing.Point(0, 3);
+            this.orderHistory1.Name = "orderHistory1";
+            this.orderHistory1.Size = new System.Drawing.Size(1111, 692);
+            this.orderHistory1.TabIndex = 0;
+            this.orderHistory1.Load += new System.EventHandler(this.orderHistory1_Load);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1226, 630);
+            this.ClientSize = new System.Drawing.Size(1370, 719);
             this.Controls.Add(this.OrderHistory);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button4);

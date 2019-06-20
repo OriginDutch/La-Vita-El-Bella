@@ -78,8 +78,8 @@ namespace Restaurant
                 var TafelNummer = new Label
                 {
                     Size = new Size(200, 100),
-                    Text = "Tafel Nummer: " + pullingdata["TableNum"],
-                    Font = new Font(FontFamily.GenericSansSerif, 20, FontStyle.Bold),
+                    Text = "Tafelnummer: " + pullingdata["TableNum"],
+                    Font = new Font(FontFamily.GenericSansSerif, 10, FontStyle.Bold),
                 };
                 FlowBox.Controls.Add(TafelNummer);
 
@@ -105,51 +105,9 @@ namespace Restaurant
                 var Price = new Label
                 {
                     Size = new Size(410, 100),
-                    Text = "Order totaal = " + pullingdata["OrderPrice"],
+                    Text = "Prijs €  = " + pullingdata["OrderPrice"],
                 };
                 FlowBox.Controls.Add(Price);
-                
-                //Maak de button aan
-                var Button = new Button
-                {
-                    Size = new Size(409, 1000),
-                    Text = "Order klaar.",
-                };
-                FlowBox.Controls.Add(Button);
-
-
-                // Maak een eventhandler voor de button Click
-                Button.Click += new EventHandler(button_Click);
-
-                // Event handler voor de button
-                void button_Click(object sender, EventArgs e)
-                {
-                    // Maak de button aan
-                    Button button = sender as Button;
-
-                    // Laat zien welke order klaar is
-                    MessageBox.Show("Order " + OrderIdButton + " Is klaar.");
-
-                    // Update de orderstatus naar 1 waar de orderidbutton is
-                    MySqlCommand test = new MySqlCommand("UPDATE Orders SET OrderStatus = 1 WHERE OrderId = " + OrderIdButton, databaseConnection);
-
-                    // Open De database connectie
-                    databaseConnection.Open();
-
-                    // Laat de query in
-                    MySqlDataReader pulldata1 = test.ExecuteReader();
-
-                    // Sluit de database connectie
-                    databaseConnection.Close();
-
-                    // Clear de flowlayout panel
-                    flowLayoutPanel1.Controls.Clear();
-
-                    // Laat het opnieuw in
-                    loadFromDatabase();
-
-
-                }
             }
             databaseConnection.Close();
 
