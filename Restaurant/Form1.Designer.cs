@@ -103,9 +103,9 @@ namespace Restaurant
             // 
             // orderHistory1
             // 
-            this.orderHistory1.Location = new System.Drawing.Point(0, 0);
+            this.orderHistory1.Location = new System.Drawing.Point(0, 3);
             this.orderHistory1.Name = "orderHistory1";
-            this.orderHistory1.Size = new System.Drawing.Size(978, 618);
+            this.orderHistory1.Size = new System.Drawing.Size(967, 603);
             this.orderHistory1.TabIndex = 0;
             this.orderHistory1.Load += new System.EventHandler(this.orderHistory1_Load);
             // 
@@ -115,7 +115,7 @@ namespace Restaurant
             this.OrderHistory.Name = "OrderHistory";
             this.OrderHistory.Size = new System.Drawing.Size(218, 100);
             this.OrderHistory.TabIndex = 1;
-            this.OrderHistory.Text = "Order History";
+            this.OrderHistory.Text = "OrderHistory";
             this.OrderHistory.UseVisualStyleBackColor = true;
             this.OrderHistory.Click += new System.EventHandler(this.OrderHistory_Click);
             // 

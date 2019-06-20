@@ -68,7 +68,7 @@ namespace Restaurant
         private void button5_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            var myControl = new test();
+            var myControl = new OrderHistory();
             panel1.Controls.Add(myControl);
         }
 
@@ -79,13 +79,10 @@ namespace Restaurant
 
         private void OrderHistory_Click(object sender, EventArgs e)
         {
-            // verstopt de andere user controls
-            chef.Hide();
-            Tafels.Hide();
-            test.Hide();
-            // opent order history user control
-            OrderHistory.Show();
-            OrderHistory.BringToFront();
+
+            panel1.Controls.Clear();
+            var myControl = new OrderHistory();
+            panel1.Controls.Add(myControl);
         }
     }
 }

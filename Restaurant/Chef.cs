@@ -144,7 +144,7 @@ namespace Restaurant
 
                     // Update de orderstatus naar 1 waar de orderidbutton is
                     MySqlCommand test = new MySqlCommand("UPDATE Orders SET OrderStatus = 1 WHERE OrderId = " + OrderIdButton, databaseConnection);
-
+ 
                     // Open De database connectie
                     databaseConnection.Open();
 
