@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chef.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chef.Designer.cs">
+      <DependentUpon>Chef.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -90,6 +96,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Chef.resx">
+      <DependentUpon>Chef.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="databasetest.resx">
       <DependentUpon>databasetest.cs</DependentUpon>
       <SubType>Designer</SubType>

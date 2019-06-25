@@ -46,7 +46,9 @@ namespace Restaurant
         //Chef Menu knop
         private void ChMe_Click(object sender, EventArgs e)
         {
-
+            panel1.Controls.Clear();
+            var myControl = new chef();
+            panel1.Controls.Add(myControl);
         }
 
         //Tafeltjes scherm
