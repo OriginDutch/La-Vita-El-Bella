@@ -73,7 +73,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(553, 59);
+            this.label1.Location = new System.Drawing.Point(779, 68);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(13, 13);
             this.label1.TabIndex = 20;
@@ -83,7 +83,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(812, 89);
+            this.label2.Location = new System.Drawing.Point(1207, 95);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(13, 13);
             this.label2.TabIndex = 21;
@@ -93,7 +93,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(659, 280);
+            this.label3.Location = new System.Drawing.Point(913, 351);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(13, 13);
             this.label3.TabIndex = 22;
@@ -103,7 +103,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(798, 261);
+            this.label4.Location = new System.Drawing.Point(1207, 301);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(13, 13);
             this.label4.TabIndex = 23;
@@ -113,7 +113,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(554, 504);
+            this.label5.Location = new System.Drawing.Point(798, 635);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(13, 13);
             this.label5.TabIndex = 24;
@@ -123,7 +123,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(798, 588);
+            this.label6.Location = new System.Drawing.Point(1215, 666);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(13, 13);
             this.label6.TabIndex = 25;
@@ -132,59 +132,64 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = global::Restaurant.Properties.Resources.thumbnail__1_;
-            this.pictureBox12.Location = new System.Drawing.Point(762, 514);
+            this.pictureBox12.Location = new System.Drawing.Point(1043, 644);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox12.Size = new System.Drawing.Size(50, 50);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 19;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
             // 
             // pictureBox11
             // 
             this.pictureBox11.Image = global::Restaurant.Properties.Resources.thumbnail__1_;
-            this.pictureBox11.Location = new System.Drawing.Point(815, 357);
+            this.pictureBox11.Location = new System.Drawing.Point(1111, 447);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox11.Size = new System.Drawing.Size(50, 50);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 18;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // pictureBox10
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(707, 356);
+            this.pictureBox10.Location = new System.Drawing.Point(974, 447);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox10.Size = new System.Drawing.Size(50, 50);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 17;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // pictureBox9
             // 
             this.pictureBox9.Image = global::Restaurant.Properties.Resources.thumbnail__1_;
-            this.pictureBox9.Location = new System.Drawing.Point(725, 272);
+            this.pictureBox9.Location = new System.Drawing.Point(997, 341);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox9.Size = new System.Drawing.Size(50, 50);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 16;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Restaurant.Properties.Resources.thumbnail__1_;
-            this.pictureBox8.Location = new System.Drawing.Point(697, 100);
+            this.pictureBox8.Location = new System.Drawing.Point(962, 122);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox8.Size = new System.Drawing.Size(50, 50);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 15;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(538, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(762, 23);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 90);
+            this.pictureBox1.Size = new System.Drawing.Size(49, 107);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
@@ -193,9 +198,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Restaurant.Properties.Resources.Lange_Tafel_Groen;
-            this.pictureBox3.Location = new System.Drawing.Point(642, 239);
+            this.pictureBox3.Location = new System.Drawing.Point(893, 301);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(42, 90);
+            this.pictureBox3.Size = new System.Drawing.Size(50, 108);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
@@ -204,9 +209,9 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Restaurant.Properties.Resources.Lange_Tafel_Groen;
-            this.pictureBox5.Location = new System.Drawing.Point(508, 488);
+            this.pictureBox5.Location = new System.Drawing.Point(722, 612);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(112, 49);
+            this.pictureBox5.Size = new System.Drawing.Size(155, 60);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 12;
             this.pictureBox5.TabStop = false;
@@ -215,9 +220,9 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Restaurant.Properties.Resources.Lange_Tafel_Groen;
-            this.pictureBox6.Location = new System.Drawing.Point(764, 559);
+            this.pictureBox6.Location = new System.Drawing.Point(1161, 647);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(90, 42);
+            this.pictureBox6.Size = new System.Drawing.Size(108, 50);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 11;
             this.pictureBox6.TabStop = false;
@@ -226,9 +231,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Restaurant.Properties.Resources.Lange_Tafel_Groen;
-            this.pictureBox4.Location = new System.Drawing.Point(787, 221);
+            this.pictureBox4.Location = new System.Drawing.Point(1184, 247);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(42, 90);
+            this.pictureBox4.Size = new System.Drawing.Size(55, 117);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 10;
             this.pictureBox4.TabStop = false;
@@ -237,29 +242,31 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Restaurant.Properties.Resources.thumbnail__1_;
-            this.pictureBox7.Location = new System.Drawing.Point(697, 31);
+            this.pictureBox7.Location = new System.Drawing.Point(962, 31);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox7.Size = new System.Drawing.Size(50, 50);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 1;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox20
             // 
-            this.pictureBox20.BackColor = System.Drawing.Color.White;
+            this.pictureBox20.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
             this.pictureBox20.Location = new System.Drawing.Point(0, 0);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(1516, 795);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox20.TabIndex = 9;
             this.pictureBox20.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(787, 21);
+            this.pictureBox2.Location = new System.Drawing.Point(1184, 28);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(42, 127);
+            this.pictureBox2.Size = new System.Drawing.Size(55, 151);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -269,7 +276,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(711, 43);
+            this.label7.Location = new System.Drawing.Point(982, 50);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(13, 13);
             this.label7.TabIndex = 26;
@@ -279,7 +286,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(711, 113);
+            this.label8.Location = new System.Drawing.Point(982, 140);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(13, 13);
             this.label8.TabIndex = 27;
@@ -289,7 +296,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Location = new System.Drawing.Point(738, 285);
+            this.label9.Location = new System.Drawing.Point(1016, 360);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(13, 13);
             this.label9.TabIndex = 28;
@@ -299,7 +306,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(717, 369);
+            this.label10.Location = new System.Drawing.Point(991, 465);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(19, 13);
             this.label10.TabIndex = 29;
@@ -309,7 +316,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Location = new System.Drawing.Point(826, 369);
+            this.label11.Location = new System.Drawing.Point(1127, 465);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(19, 13);
             this.label11.TabIndex = 30;
@@ -319,7 +326,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Location = new System.Drawing.Point(773, 527);
+            this.label12.Location = new System.Drawing.Point(1060, 662);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(19, 13);
             this.label12.TabIndex = 31;
@@ -357,7 +364,7 @@
             this.Controls.Add(this.pictureBox20);
             this.DoubleBuffered = true;
             this.Name = "Tafels";
-            this.Size = new System.Drawing.Size(1516, 795);
+            this.Size = new System.Drawing.Size(1480, 840);
             this.Load += new System.EventHandler(this.Tafels_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();

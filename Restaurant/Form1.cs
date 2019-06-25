@@ -27,7 +27,7 @@ namespace Restaurant
         private void Form1_Load(object sender, EventArgs e)
         {
             MySqlConnection conn = new MySqlConnection("datasource=remotemysql.com;port=3306;username=KOkL7wllES;password=ZkNaR0D22e;database=KOkL7wllES;");
-            conn.Open();
+           // conn.Open();
             label3.Text= Startscherm.recby;
         }
 

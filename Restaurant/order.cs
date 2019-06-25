@@ -13,7 +13,7 @@ namespace Restaurant
     public partial class Order : UserControl
     {
 
-        public bool[] isBezet = { false, false, false, false, false, false};
+
         public Order()
         {
             InitializeComponent();
@@ -33,11 +33,6 @@ namespace Restaurant
             {
                 Tafels.isBezet = true;
             }
-            else
-            {
-                Tafels.isBezet = false;
-            }
-
         }
     }
 }

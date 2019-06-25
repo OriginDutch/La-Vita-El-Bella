@@ -47,7 +47,7 @@ namespace Restaurant
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(33, 414);
+            this.button1.Location = new System.Drawing.Point(33, 576);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 65);
             this.button1.TabIndex = 0;
@@ -57,7 +57,7 @@ namespace Restaurant
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(33, 320);
+            this.button2.Location = new System.Drawing.Point(33, 469);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 65);
             this.button2.TabIndex = 1;
@@ -67,7 +67,7 @@ namespace Restaurant
             // 
             // Tafel
             // 
-            this.Tafel.Location = new System.Drawing.Point(33, 507);
+            this.Tafel.Location = new System.Drawing.Point(33, 680);
             this.Tafel.Name = "Tafel";
             this.Tafel.Size = new System.Drawing.Size(150, 65);
             this.Tafel.TabIndex = 2;
@@ -77,7 +77,7 @@ namespace Restaurant
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(33, 226);
+            this.button4.Location = new System.Drawing.Point(33, 367);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(150, 65);
             this.button4.TabIndex = 3;
@@ -87,9 +87,10 @@ namespace Restaurant
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(275, 50);
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Location = new System.Drawing.Point(321, 97);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1049, 603);
+            this.panel1.Size = new System.Drawing.Size(1480, 840);
             this.panel1.TabIndex = 4;
             // 
             // label1
@@ -97,7 +98,7 @@ namespace Restaurant
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(68, 128);
+            this.label1.Location = new System.Drawing.Point(53, 223);
             this.label1.MinimumSize = new System.Drawing.Size(50, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 25);
@@ -117,7 +118,7 @@ namespace Restaurant
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(68, 153);
+            this.label3.Location = new System.Drawing.Point(53, 248);
             this.label3.MinimumSize = new System.Drawing.Size(89, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 25);
@@ -127,9 +128,9 @@ namespace Restaurant
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(57, 29);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 46);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(115, 71);
+            this.pictureBox1.Size = new System.Drawing.Size(186, 133);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
@@ -138,7 +139,7 @@ namespace Restaurant
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.pictureBox2.Location = new System.Drawing.Point(-9, -28);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(231, 738);
+            this.pictureBox2.Size = new System.Drawing.Size(226, 1073);
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
@@ -147,7 +148,7 @@ namespace Restaurant
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(214, -49);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1470, 738);
+            this.pictureBox3.Size = new System.Drawing.Size(1694, 1094);
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
             // 
@@ -156,7 +157,7 @@ namespace Restaurant
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1312, 681);
+            this.ClientSize = new System.Drawing.Size(1904, 881);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -170,7 +171,6 @@ namespace Restaurant
             this.Controls.Add(this.pictureBox3);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
-            this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "Form1";
             this.Text = "Restaurant";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

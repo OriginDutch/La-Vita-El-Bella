@@ -13,7 +13,7 @@ namespace Restaurant
     public partial class Tafels : UserControl
     {
         Panel panel;
-        public static bool isBezet = false;        
+        public static bool isBezet;        
 
 
         public Tafels( Panel panelArgument)
@@ -27,6 +27,7 @@ namespace Restaurant
         private void Tafels_Load(object sender, EventArgs e)
         {
             changeTable();
+
         }
 
         //veranderen kleur tafel
@@ -36,54 +37,26 @@ namespace Restaurant
             if (isBezet == true && Form1.isBezet1[0] == true)
             {
                 pictureBox1.Image = Properties.Resources.Lange_Tafel;
-            } else
-            {
-                pictureBox1.Image = Properties.Resources.Lange_Tafel_Groen;
-            }
-
+            } 
             if (isBezet == true && Form1.isBezet1[1] == true)
             {
                 pictureBox2.Image = Properties.Resources.Lange_Tafel;
             }
-            else
-            {
-                pictureBox2.Image = Properties.Resources.Lange_Tafel_Groen;
-            }
-
             if (isBezet == true && Form1.isBezet1[2] == true)
             {
                 pictureBox3.Image = Properties.Resources.Lange_Tafel;
             }
-            else
-            {
-                pictureBox3.Image = Properties.Resources.Lange_Tafel_Groen;
-            }
-
             if (isBezet == true && Form1.isBezet1[3] == true)
             {
                 pictureBox4.Image = Properties.Resources.Lange_Tafel;
             }
-            else
-            {
-                pictureBox4.Image = Properties.Resources.Lange_Tafel_Groen;
-            }
-
             if (isBezet == true && Form1.isBezet1[4] == true)
             {
                 pictureBox5.Image = Properties.Resources.Lange_Tafel;
             }
-            else
-            {
-                pictureBox5.Image = Properties.Resources.Lange_Tafel_Groen;
-            }
-
             if (isBezet == true && Form1.isBezet1[5] == true)
             {
                 pictureBox6.Image = Properties.Resources.Lange_Tafel;
-            }
-            else
-            {
-                pictureBox6.Image = Properties.Resources.Lange_Tafel_Groen;
             }
 
             //de kleine tafels
@@ -114,6 +87,8 @@ namespace Restaurant
 
         }
 
+         
+        //***************************************************//
         //Openen order tafel 1
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -166,15 +141,69 @@ namespace Restaurant
             panel.Controls.Clear();
             var myControl = new Order();
             panel.Controls.Add(myControl);
-
         }
 
+        //Openen order tafel 7
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Form1.isBezet1[6] = true;
+            panel.Controls.Clear();
+            var myControl = new Order();
+            panel.Controls.Add(myControl);
+        }
 
+        //Openen order tafel 8
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            Form1.isBezet1[7] = true;
+            panel.Controls.Clear();
+            var myControl = new Order();
+            panel.Controls.Add(myControl);
+        }
+
+        //Openen order tafel 9
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Form1.isBezet1[8] = true;
+            panel.Controls.Clear();
+            var myControl = new Order();
+            panel.Controls.Add(myControl);
+        }
+
+        //Openen order tafel 10
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            Form1.isBezet1[9] = true;
+            panel.Controls.Clear();
+            var myControl = new Order();
+            panel.Controls.Add(myControl);
+        }
+
+        //Openen order tafel 11
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            Form1.isBezet1[10] = true;
+            panel.Controls.Clear();
+            var myControl = new Order();
+            panel.Controls.Add(myControl);
+        }
+
+        //Openen order tafel 12
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            Form1.isBezet1[11] = true;
+            panel.Controls.Clear();
+            var myControl = new Order();
+            panel.Controls.Add(myControl);
+        }
+        //***************************************************//
+
+
+        //Zorgt ervoor dat de label bij de juiste tafel staat, en transparant is.
         private void labelLoad()
         {
 
             var pos1 = this.PointToScreen(label1.Location);
-
             pos1 = pictureBox1.PointToClient(pos1);
             label1.Parent = pictureBox1;
             label1.Location = pos1;
