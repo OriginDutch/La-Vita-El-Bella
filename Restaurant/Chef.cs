@@ -105,14 +105,13 @@ namespace Restaurant
 
                 //laat het gerecht zien
                 var NameText = new Label
-                {
+                {  
                     Size = new Size(410, 25),
                     Text = "", //+ pullingdata["DishName"],
                                //ReadOnly = true
                 };
                 FlowBox.Controls.Add(NameText);
-
-                //laat de OrderId zien
+               //laat de OrderId zien
                 var OrderId = new Label
                 {
                     Size = new Size(410, 25),
@@ -167,6 +166,9 @@ namespace Restaurant
             
         }
 
-     
+        private void Chef_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

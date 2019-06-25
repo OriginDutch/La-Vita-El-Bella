@@ -79,6 +79,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "chef";
             this.Size = new System.Drawing.Size(1680, 1000);
+            this.Load += new System.EventHandler(this.Chef_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
