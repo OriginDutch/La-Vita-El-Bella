@@ -113,6 +113,33 @@ namespace Restaurant
 
         }
 
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+            float price, total = 0;
+            string connectionString = "datasource=remotemysql.com;port=3306;username=KOkL7wllES;password=ZkNaR0D22e;database=KOkL7wllES;";
+            MySqlConnection databaseConnection = new MySqlConnection(connectionString);
 
+            databaseConnection.Open();
+
+            MySqlCommand pulldata = new MySqlCommand("SELECT * FROM Orders WHERE OrderStatus = 1", databaseConnection);
+            MySqlDataReader pullingdata = pulldata.ExecuteReader();
+            while (pullingdata.Read()) {
+
+                price = float.Parse(pullingdata["OrderPrice"].ToString());
+                total = total + price;
+                textBox1.Text = total.ToString();
+            }
+           
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        
+
+        
     }
 }
