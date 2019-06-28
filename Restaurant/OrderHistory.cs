@@ -45,14 +45,11 @@ namespace Restaurant
         //Connect naar de database
         public void loadFromDatabase()
         {
-            // Maak De datbase connectie
             string connectionString = "datasource=remotemysql.com;port=3306;username=KOkL7wllES;password=ZkNaR0D22e;database=KOkL7wllES;";
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
 
-            //Open de database connectie
             databaseConnection.Open();
 
-            // Laat alleen de orders zien waar de OrderStatus 0 is
             MySqlCommand pulldata = new MySqlCommand("SELECT * FROM Orders WHERE OrderStatus = 1", databaseConnection);
             MySqlDataReader pullingdata = pulldata.ExecuteReader();
 
@@ -74,7 +71,6 @@ namespace Restaurant
                 };
                 flowLayoutPanel1.Controls.Add(FlowBox);
 
-                //laat het taffelnummer zien
                 var TafelNummer = new Label
                 {
                     Size = new Size(200, 100),
