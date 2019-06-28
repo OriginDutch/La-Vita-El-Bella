@@ -19,12 +19,12 @@ using MySql.Data.MySqlClient;
 
 namespace menu_la_vita_e_bella
 {
-    public partial class Form1 : Form
+    public partial class Form1 : UserControl
     {
         string MySQLConnectionString = "datasource=remotemysql.com;port=3306;username=KOkL7wllES;password=ZkNaR0D22e;database=KOkL7wllES";
         bool Editing = false;
 
-        public Form1()
+        public Form1(Panel panel1)
         {
             InitializeComponent();            
         }

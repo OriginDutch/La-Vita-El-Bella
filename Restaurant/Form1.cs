@@ -72,9 +72,9 @@ namespace Restaurant
 
         private void Menu_click(object sender, EventArgs e)
         {
-            Form1 main = new Form1();
-            main.Show();
-            this.Hide();
+            panel1.Controls.Clear();
+            var myControl = new Form1(panel1);
+            panel1.Controls.Add(myControl);
         }
     }
 }
