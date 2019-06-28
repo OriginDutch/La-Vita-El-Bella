@@ -13,7 +13,8 @@ namespace Restaurant
     public partial class Tafels : UserControl
     {
         Panel panel;
-        public static bool isBezet;        
+        public static bool isBezet;
+        public static int CurrentTable;
 
 
         public Tafels( Panel panelArgument)
@@ -93,6 +94,7 @@ namespace Restaurant
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Form1.isBezet1[0] = true;
+            CurrentTable = 1;
             panel.Controls.Clear();
             var myControl = new Order();
             panel.Controls.Add(myControl);
@@ -102,6 +104,7 @@ namespace Restaurant
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Form1.isBezet1[1] = true;
+            CurrentTable = 2;
             panel.Controls.Clear();
             var myControl = new Order();
             panel.Controls.Add(myControl);    
@@ -111,6 +114,7 @@ namespace Restaurant
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             Form1.isBezet1[2] = true;
+            CurrentTable = 3;
             panel.Controls.Clear();
             var myControl = new Order();
             panel.Controls.Add(myControl);           
@@ -120,6 +124,7 @@ namespace Restaurant
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             Form1.isBezet1[3] = true;
+            CurrentTable = 4;
             panel.Controls.Clear();
             var myControl = new Order();
             panel.Controls.Add(myControl);
@@ -129,6 +134,7 @@ namespace Restaurant
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             Form1.isBezet1[4] = true;
+            CurrentTable = 5;
             panel.Controls.Clear();
             var myControl = new Order();
             panel.Controls.Add(myControl);
@@ -138,6 +144,7 @@ namespace Restaurant
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             Form1.isBezet1[5] = true;
+            CurrentTable = 6;
             panel.Controls.Clear();
             var myControl = new Order();
             panel.Controls.Add(myControl);
@@ -147,6 +154,7 @@ namespace Restaurant
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             Form1.isBezet1[6] = true;
+            CurrentTable = 7;
             panel.Controls.Clear();
             var myControl = new Order();
             panel.Controls.Add(myControl);
@@ -156,6 +164,7 @@ namespace Restaurant
         private void pictureBox8_Click(object sender, EventArgs e)
         {
             Form1.isBezet1[7] = true;
+            CurrentTable = 8;
             panel.Controls.Clear();
             var myControl = new Order();
             panel.Controls.Add(myControl);
@@ -165,6 +174,7 @@ namespace Restaurant
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             Form1.isBezet1[8] = true;
+            CurrentTable = 9;
             panel.Controls.Clear();
             var myControl = new Order();
             panel.Controls.Add(myControl);
@@ -174,6 +184,7 @@ namespace Restaurant
         private void pictureBox10_Click(object sender, EventArgs e)
         {
             Form1.isBezet1[9] = true;
+            CurrentTable = 10;
             panel.Controls.Clear();
             var myControl = new Order();
             panel.Controls.Add(myControl);
@@ -183,6 +194,7 @@ namespace Restaurant
         private void pictureBox11_Click(object sender, EventArgs e)
         {
             Form1.isBezet1[10] = true;
+            CurrentTable = 11;
             panel.Controls.Clear();
             var myControl = new Order();
             panel.Controls.Add(myControl);
@@ -192,6 +204,7 @@ namespace Restaurant
         private void pictureBox12_Click(object sender, EventArgs e)
         {
             Form1.isBezet1[11] = true;
+            CurrentTable = 12;
             panel.Controls.Clear();
             var myControl = new Order();
             panel.Controls.Add(myControl);
