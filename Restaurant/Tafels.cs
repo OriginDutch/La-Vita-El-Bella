@@ -35,53 +35,53 @@ namespace Restaurant
         public void changeTable()
         {
             //grote tafels
-            if (isBezet == true && Form1.isBezet1[0] == true)
+            if (isBezet == true && MainMenu.isBezet1[0] == true)
             {
                 pictureBox1.Image = Properties.Resources.Lange_Tafel;
             } 
-            if (isBezet == true && Form1.isBezet1[1] == true)
+            if (isBezet == true && MainMenu.isBezet1[1] == true)
             {
                 pictureBox2.Image = Properties.Resources.Lange_Tafel;
             }
-            if (isBezet == true && Form1.isBezet1[2] == true)
+            if (isBezet == true && MainMenu.isBezet1[2] == true)
             {
                 pictureBox3.Image = Properties.Resources.Lange_Tafel;
             }
-            if (isBezet == true && Form1.isBezet1[3] == true)
+            if (isBezet == true && MainMenu.isBezet1[3] == true)
             {
                 pictureBox4.Image = Properties.Resources.Lange_Tafel;
             }
-            if (isBezet == true && Form1.isBezet1[4] == true)
+            if (isBezet == true && MainMenu.isBezet1[4] == true)
             {
                 pictureBox5.Image = Properties.Resources.Lange_Tafel;
             }
-            if (isBezet == true && Form1.isBezet1[5] == true)
+            if (isBezet == true && MainMenu.isBezet1[5] == true)
             {
                 pictureBox6.Image = Properties.Resources.Lange_Tafel;
             }
 
             //de kleine tafels
-            if (isBezet == true && Form1.isBezet1[6] == true)
+            if (isBezet == true && MainMenu.isBezet1[6] == true)
             {
                 pictureBox7.Image = Properties.Resources.thumbnail__1_1;
             }
-            if (isBezet == true && Form1.isBezet1[7] == true)
+            if (isBezet == true && MainMenu.isBezet1[7] == true)
             {
                 pictureBox8.Image = Properties.Resources.thumbnail__1_1;
             }
-            if (isBezet == true && Form1.isBezet1[8] == true)
+            if (isBezet == true && MainMenu.isBezet1[8] == true)
             {
                 pictureBox9.Image = Properties.Resources.thumbnail__1_1;
             }
-            if (isBezet == true && Form1.isBezet1[9] == true)
+            if (isBezet == true && MainMenu.isBezet1[9] == true)
             {
                 pictureBox10.Image = Properties.Resources.thumbnail__1_1;
             }
-            if (isBezet == true && Form1.isBezet1[10] == true)
+            if (isBezet == true && MainMenu.isBezet1[10] == true)
             {
                 pictureBox11.Image = Properties.Resources.thumbnail__1_1;
             }
-            if (isBezet == true && Form1.isBezet1[11] == true)
+            if (isBezet == true && MainMenu.isBezet1[11] == true)
             {
                 pictureBox12.Image = Properties.Resources.thumbnail__1_1;
             }
@@ -93,7 +93,7 @@ namespace Restaurant
         //Openen order tafel 1
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Form1.isBezet1[0] = true;
+            MainMenu.isBezet1[0] = true;
             CurrentTable = 1;
             panel.Controls.Clear();
             var myControl = new Order();
@@ -103,7 +103,7 @@ namespace Restaurant
         //Openen order tafel 2
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Form1.isBezet1[1] = true;
+            MainMenu.isBezet1[1] = true;
             CurrentTable = 2;
             panel.Controls.Clear();
             var myControl = new Order();
@@ -113,7 +113,7 @@ namespace Restaurant
         //Openen order tafel 3
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Form1.isBezet1[2] = true;
+            MainMenu.isBezet1[2] = true;
             CurrentTable = 3;
             panel.Controls.Clear();
             var myControl = new Order();
@@ -123,7 +123,7 @@ namespace Restaurant
         //Openen order tafel 4
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Form1.isBezet1[3] = true;
+            MainMenu.isBezet1[3] = true;
             CurrentTable = 4;
             panel.Controls.Clear();
             var myControl = new Order();
@@ -133,7 +133,7 @@ namespace Restaurant
         //Openen order tafel 5
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            Form1.isBezet1[4] = true;
+            MainMenu.isBezet1[4] = true;
             CurrentTable = 5;
             panel.Controls.Clear();
             var myControl = new Order();
@@ -143,7 +143,7 @@ namespace Restaurant
         //Openen order tafel 6
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            Form1.isBezet1[5] = true;
+            MainMenu.isBezet1[5] = true;
             CurrentTable = 6;
             panel.Controls.Clear();
             var myControl = new Order();
@@ -153,7 +153,7 @@ namespace Restaurant
         //Openen order tafel 7
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            Form1.isBezet1[6] = true;
+            MainMenu.isBezet1[6] = true;
             CurrentTable = 7;
             panel.Controls.Clear();
             var myControl = new Order();
@@ -163,7 +163,7 @@ namespace Restaurant
         //Openen order tafel 8
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            Form1.isBezet1[7] = true;
+            MainMenu.isBezet1[7] = true;
             CurrentTable = 8;
             panel.Controls.Clear();
             var myControl = new Order();
@@ -173,7 +173,7 @@ namespace Restaurant
         //Openen order tafel 9
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-            Form1.isBezet1[8] = true;
+            MainMenu.isBezet1[8] = true;
             CurrentTable = 9;
             panel.Controls.Clear();
             var myControl = new Order();
@@ -183,7 +183,7 @@ namespace Restaurant
         //Openen order tafel 10
         private void pictureBox10_Click(object sender, EventArgs e)
         {
-            Form1.isBezet1[9] = true;
+            MainMenu.isBezet1[9] = true;
             CurrentTable = 10;
             panel.Controls.Clear();
             var myControl = new Order();
@@ -193,7 +193,7 @@ namespace Restaurant
         //Openen order tafel 11
         private void pictureBox11_Click(object sender, EventArgs e)
         {
-            Form1.isBezet1[10] = true;
+            MainMenu.isBezet1[10] = true;
             CurrentTable = 11;
             panel.Controls.Clear();
             var myControl = new Order();
@@ -203,7 +203,7 @@ namespace Restaurant
         //Openen order tafel 12
         private void pictureBox12_Click(object sender, EventArgs e)
         {
-            Form1.isBezet1[11] = true;
+            MainMenu.isBezet1[11] = true;
             CurrentTable = 12;
             panel.Controls.Clear();
             var myControl = new Order();

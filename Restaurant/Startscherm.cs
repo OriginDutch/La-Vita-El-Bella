@@ -41,7 +41,7 @@ namespace Restaurant
             {
                 recby = Username.Text;
                 this.Hide();
-                Form1 main = new Form1();
+                MainMenu main = new MainMenu();
                 main.Show();
             }
             else

@@ -1,6 +1,6 @@
 namespace Restaurant
 {
-    partial class Form1
+    partial class MainMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@ namespace Restaurant
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.Tafel = new System.Windows.Forms.Button();
@@ -40,6 +40,7 @@ namespace Restaurant
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -77,7 +78,7 @@ namespace Restaurant
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(33, 367);
+            this.button4.Location = new System.Drawing.Point(247, 12);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(150, 65);
             this.button4.TabIndex = 3;
@@ -152,12 +153,23 @@ namespace Restaurant
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(33, 366);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(150, 65);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Menu";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Menu_click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1904, 881);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -198,6 +210,7 @@ namespace Restaurant
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button button3;
     }
 }
 

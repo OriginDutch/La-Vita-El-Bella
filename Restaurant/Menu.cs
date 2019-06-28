@@ -200,7 +200,7 @@ namespace menu_la_vita_e_bella
 
 
 
-            //TESTING
+            /*TESTING
 
             //trying to draw image on button
         private void PizzaList_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
@@ -216,7 +216,7 @@ namespace menu_la_vita_e_bella
 
         }
 
-
+    */
 
         private void PizzaList_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {

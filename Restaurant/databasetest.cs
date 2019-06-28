@@ -28,7 +28,7 @@ namespace Restaurant
         //terug naar main
         private void Button1_Click(object sender, EventArgs e)
         {
-            Form1 main = new Form1();
+            MainMenu main = new MainMenu();
             main.Show();
             this.Hide();
         }

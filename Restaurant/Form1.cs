@@ -1,3 +1,4 @@
+using menu_la_vita_e_bella;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -14,11 +15,11 @@ using System.Windows.Forms;
 
 namespace Restaurant
 {
-    public partial class Form1 : Form
+    public partial class MainMenu : Form
     {
 
         static public bool[] isBezet1 = new bool[12];
-        public Form1()
+        public MainMenu()
         {
             InitializeComponent();
         }
@@ -69,5 +70,11 @@ namespace Restaurant
             this.Hide();
         }
 
+        private void Menu_click(object sender, EventArgs e)
+        {
+            Form1 main = new Form1();
+            main.Show();
+            this.Hide();
+        }
     }
 }
