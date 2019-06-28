@@ -40,7 +40,9 @@ namespace Restaurant
         //Order History knop
         private void OrHi_Click(object sender, EventArgs e)
         {
-
+            panel1.Controls.Clear();
+            var myControl = new OrderHistory();
+            panel1.Controls.Add(myControl);
         }
 
         //Chef Menu knop
