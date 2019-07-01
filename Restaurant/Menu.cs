@@ -204,25 +204,6 @@ namespace menu_la_vita_e_bella
         }
 
 
-
-            /*TESTING
-
-            //trying to draw image on button
-        private void PizzaList_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
-        {
-            
-                var image = Properties.Resources.DeleteIcon; //An image
-            string fileName = "C:\\Users\\Aina\\Desktop\\aqua.png";
-
-            Bitmap img;
-            img = new Bitmap(@"C:\\Users\\Aina\\Desktop\\aqua.png");
-
-
-
-        }
-
-    */
-
         private void PizzaList_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             PizzaList.Rows[e.RowIndex].Cells[0].Value = "x";
@@ -234,11 +215,13 @@ namespace menu_la_vita_e_bella
         private void PastaList_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             PastaList.Rows[e.RowIndex].Cells[0].Value = "x";
+            PastaList.Rows[e.RowIndex].Cells[1].Value = "e";
         }
 
         private void DrinkList_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             DrinkList.Rows[e.RowIndex].Cells[0].Value = "x";
+            DrinkList.Rows[e.RowIndex].Cells[1].Value = "e";
         }
 
 

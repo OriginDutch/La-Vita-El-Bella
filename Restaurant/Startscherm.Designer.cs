@@ -33,7 +33,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.Username = new System.Windows.Forms.TextBox();
             this.Password = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -79,22 +79,22 @@
             this.Password.Size = new System.Drawing.Size(100, 20);
             this.Password.TabIndex = 5;
             // 
-            // button2
+            // label3
             // 
-            this.button2.Location = new System.Drawing.Point(594, 116);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(237, 43);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(314, 51);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "La Vita El Bella";
             // 
             // Startscherm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.Username);
             this.Controls.Add(this.button1);
@@ -115,6 +115,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox Username;
         private System.Windows.Forms.TextBox Password;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -93,7 +93,6 @@
             this.Controls.Add(this.TextBoxNote);
             this.Controls.Add(this.TextBoxPrice);
             this.Controls.Add(this.TextBoxName);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form2";
