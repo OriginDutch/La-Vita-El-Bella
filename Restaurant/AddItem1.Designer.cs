@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Restaurant.Properties {
+namespace Restaurant {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Restaurant.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    internal class AddItem {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal AddItem() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Restaurant.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Restaurant.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Restaurant.AddItem", typeof(AddItem).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,56 +57,6 @@ namespace Restaurant.Properties {
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Lange_Tafel {
-            get {
-                object obj = ResourceManager.GetObject("Lange Tafel", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Lange_Tafel_Groen {
-            get {
-                object obj = ResourceManager.GetObject("Lange Tafel Groen", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap profilepicturev2__1_ {
-            get {
-                object obj = ResourceManager.GetObject("profilepicturev2 (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap thumbnail__1_ {
-            get {
-                object obj = ResourceManager.GetObject("thumbnail (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap thumbnail__1_1 {
-            get {
-                object obj = ResourceManager.GetObject("thumbnail (1)1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

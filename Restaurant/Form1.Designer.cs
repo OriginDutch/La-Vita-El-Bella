@@ -36,11 +36,11 @@ namespace Restaurant
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -117,11 +117,33 @@ namespace Restaurant
             this.label3.Text = "label3";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(33, 366);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(150, 65);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Menu";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Menu_click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(247, 12);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(150, 65);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Connection";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Conn_Click);
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 46);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 22);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(186, 133);
+            this.pictureBox1.Size = new System.Drawing.Size(180, 188);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
@@ -142,26 +164,6 @@ namespace Restaurant
             this.pictureBox3.Size = new System.Drawing.Size(1694, 1094);
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(33, 366);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 65);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Menu";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Menu_click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(247, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 65);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Connection";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Conn_Click);
             // 
             // MainMenu
             // 
