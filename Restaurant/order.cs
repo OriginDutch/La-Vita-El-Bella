@@ -70,7 +70,7 @@ namespace Restaurant
                     var OrderPiece = new TextBox
                     {
                         Size = new Size(300, 25),
-                        Text = Pizza.Text + " - Prijs : €" + Pizza.Name,
+                        Text = Pizza.Text + " - Prijs €" + Pizza.Name,
                         ReadOnly = true
                     };
 
@@ -96,7 +96,7 @@ namespace Restaurant
                     Size = new Size(300, 25),
                     Text = "" + PullingData["PastaName"],
                     Tag = "" + PullingData["ProductID"],
-                    Name = "pasta"
+                    Name = "" + PullingData["PastaPrice"]
                 };
                 flowLayoutPanel2.Controls.Add(Pasta);
                 Pasta.Click += (object sending, EventArgs r) =>
@@ -106,7 +106,7 @@ namespace Restaurant
                     var OrderPiece = new TextBox
                     {
                         Size = new Size(300, 25),
-                        Text = Pasta.Text + " - Category : " + Pasta.Name,
+                        Text = Pasta.Text + " - Prijs €" + Pasta.Name,
                         ReadOnly = true
                     };
 
@@ -132,7 +132,7 @@ namespace Restaurant
                     Size = new Size(300, 25),
                     Text = "" + PullingData["DrinkName"],
                     Tag = "" + PullingData["ProductID"],
-                    Name = "drinks"
+                    Name = "" + PullingData["DrinkPrice"]
                 };
                 flowLayoutPanel2.Controls.Add(Drink);
                 Drink.Click += (object sending, EventArgs r) =>
@@ -142,7 +142,7 @@ namespace Restaurant
                     var OrderPiece = new TextBox
                     {
                         Size = new Size(300, 25),
-                        Text = Drink.Text + " - Category : " + Drink.Name,
+                        Text = Drink.Text + " - Prijs € " + Drink.Name,
                         ReadOnly = true
                     };
 

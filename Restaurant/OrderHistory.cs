@@ -116,7 +116,8 @@ namespace Restaurant
                 total = total + price;
                 textBox1.Text = total.ToString();
             }
-           
+            databaseConnection.Close();
+
         }
     }
 }
