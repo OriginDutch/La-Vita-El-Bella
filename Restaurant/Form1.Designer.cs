@@ -32,7 +32,6 @@ namespace Restaurant
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.Tafel = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,6 +40,7 @@ namespace Restaurant
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -75,16 +75,6 @@ namespace Restaurant
             this.Tafel.Text = "Tafels";
             this.Tafel.UseVisualStyleBackColor = true;
             this.Tafel.Click += new System.EventHandler(this.Tafel_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(247, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 65);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Connection";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Conn_Click);
             // 
             // panel1
             // 
@@ -163,7 +153,17 @@ namespace Restaurant
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.Menu_click);
             // 
-            // Form1
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(247, 12);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(150, 65);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Connection";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Conn_Click);
+            // 
+            // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -183,7 +183,7 @@ namespace Restaurant
             this.Controls.Add(this.pictureBox3);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
-            this.Name = "Form1";
+            this.Name = "MainMenu";
             this.Text = "Restaurant";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
@@ -201,8 +201,6 @@ namespace Restaurant
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button Tafel;
-
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -211,6 +209,7 @@ namespace Restaurant
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
 

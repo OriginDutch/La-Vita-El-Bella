@@ -51,7 +51,9 @@ namespace menu_la_vita_e_bella
                 PizzaList.DataSource = DtblPizza;
                 PastaList.DataSource = DtblPasta;
                 DrinkList.DataSource = DtblDrink;
-            }
+
+                SqlCon.Close();
+            }          
         }
 
             //upon starting the app, datagrids automatically load using refresh function
@@ -114,6 +116,7 @@ namespace menu_la_vita_e_bella
 
                 RefreshDGV();
             }
+            DatabaseConnection.Close();
         }
 
         private void PastaList_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -155,6 +158,7 @@ namespace menu_la_vita_e_bella
 
                 RefreshDGV();
             }
+            DatabaseConnection.Close();
         }
 
         private void DrinkList_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -196,6 +200,7 @@ namespace menu_la_vita_e_bella
 
                 RefreshDGV();
             }
+            DatabaseConnection.Close();
         }
 
 

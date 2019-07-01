@@ -62,19 +62,19 @@ namespace Restaurant
             panel1.Controls.Add(myControl);
         }
 
-        //Connection check
-        private void Conn_Click(object sender, EventArgs e)
-        {
-            databasetest main = new databasetest();
-            main.Show();
-            this.Hide();
-        }
 
         private void Menu_click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
             var myControl = new Form1(panel1);
             panel1.Controls.Add(myControl);
+        }
+
+        private void Conn_Click(object sender, EventArgs e)
+        {
+            databasetest main = new databasetest();
+            main.Show();
+            this.Hide();
         }
     }
 }
